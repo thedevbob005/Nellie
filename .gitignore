@@ -1,8 +1,17 @@
-# CakePHP 3
+# ====================
+# NELLIE PROJECT
+# ====================
 
+# ====================
+# CAKEPHP BACKEND
+# ====================
+
+# CakePHP Core
 /vendor/*
+/config/app_local.php
 /config/app.php
 
+# Cache
 /tmp/cache/models/*
 !/tmp/cache/models/empty
 /tmp/cache/persistent/*
@@ -14,12 +23,235 @@
 /tmp/tests/*
 !/tmp/tests/empty
 
+# Logs
 /logs/*
 !/logs/empty
 
-# CakePHP 2
+# Uploads and Media
+/webroot/uploads/*
+/webroot/media/*
+!/webroot/uploads/.gitkeep
+!/webroot/media/.gitkeep
 
+# CakePHP 2 (legacy support)
 /app/tmp/*
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+# ====================
+# REACT NATIVE CLIENT
+# ====================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React Native
+.expo/
+.expo-shared/
+*.orig.*
+web-build/
+
+# Metro
+.metro-health-check*
+
+# Android
+*.keystore
+!debug.keystore
+*.hprof
+.gradle
+local.properties
+*.apk
+*.aab
+android/app/release/
+android/app/debug/
+android/.project
+android/.settings/
+
+# iOS (future support)
+ios/build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Windows
+windows/build/
+*.appx
+*.msix
+*.pfx
+
+# ====================
+# ENVIRONMENT & CONFIG
+# ====================
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# API Keys and Secrets
+/config/social_media_keys.php
+/config/secrets.php
+*.pem
+*.p12
+*.key
+*-key.json
+service-account*.json
+
+# Database
+*.sql
+*.sqlite
+*.db
+/database/backups/*
+
+# ====================
+# DEVELOPMENT TOOLS
+# ====================
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Editor directories and files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Composer
+composer.phar
+composer.lock
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+/tests/coverage/
+/coverage/
+/.nyc_output
+phpunit.xml
+.phpunit.result.cache
+
+# Build artifacts
+/build/
+/dist/
+*.tgz
+*.tar.gz
+
+# ====================
+# OPERATING SYSTEM
+# ====================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ====================
+# DEPLOYMENT
+# ====================
+
+# Docker
+.dockerignore
+Dockerfile.prod
+docker-compose.prod.yml
+
+# Server deployment
+/deploy/
+/scripts/deploy/
+*.pem
+*.ppk
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# ====================
+# MISCELLANEOUS
+# ====================
+
+# Temporary files
+*.tmp
+*.temp
+*.pid
+*.seed
+*.log
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
