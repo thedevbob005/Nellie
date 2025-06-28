@@ -434,8 +434,8 @@ const ApprovalScreen: React.FC<ApprovalScreenProps> = () => {
                 <Text style={styles.emptySubtitle}>
                   No posts pending approval at the moment.
                 </Text>
-              </Card.Content>
-            </Card>
+        </Card.Content>
+      </Card>
           )
         ) : (
           DEMO_RECENT_APPROVALS.map(renderRecentApproval)
